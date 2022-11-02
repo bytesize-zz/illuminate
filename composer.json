@@ -1,60 +1,66 @@
 {
-    "name": "yii2tech/illuminate",
-    "description": "Yii2 to Laravel Migration Package",
-    "keywords": ["yii2", "laravel", "illuminate", "migration", "switch"],
-    "license": "BSD-3-Clause",
-    "support": {
-        "issues": "https://github.com/yii2tech/illuminate/issues",
-        "wiki": "https://github.com/yii2tech/illuminate/wiki",
-        "source": "https://github.com/yii2tech/illuminate"
-    },
-    "authors": [
-        {
-            "name": "Paul Klimov",
-            "email": "klimov.paul@gmail.com"
-        }
-    ],
-    "require": {
-        "yiisoft/yii2": "~2.0.14",
-        "illuminate/console": "^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "illuminate/http": "^6.0 || ^7.0 || ^8.0 || ^9.0",
-        "illuminatech/array-factory": "^1.2.3"
-    },
-    "require-dev": {
-        "illuminate/auth": "*",
-        "illuminate/cache": "*",
-        "illuminate/config": "*",
-        "illuminate/database": "*",
-        "illuminate/events": "*",
-        "illuminate/hashing": "*",
-        "illuminate/log": "*",
-        "illuminate/translation": "*",
-        "phpunit/phpunit": "^7.5 || ^8.0 || ^9.3"
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Yii2tech\\Illuminate\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Yii2tech\\Illuminate\\Test\\": "tests"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        },
-        "laravel": {
-            "providers": [
-                "Yii2tech\\Illuminate\\YiiIlluminateServiceProvider"
-            ]
-        }
+  "name": "yii2tech/illuminate",
+  "description": "Yii2 to Laravel Migration Package",
+  "keywords": [
+    "yii2",
+    "laravel",
+    "illuminate",
+    "migration",
+    "switch"
+  ],
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yii2tech/illuminate/issues",
+    "wiki": "https://github.com/yii2tech/illuminate/wiki",
+    "source": "https://github.com/yii2tech/illuminate"
+  },
+  "authors": [
+    {
+      "name": "Paul Klimov",
+      "email": "klimov.paul@gmail.com"
     }
+  ],
+  "require": {
+    "yiisoft/yii2": ">2.0.14",
+    "illuminate/console": ">=6.0",
+    "illuminate/http": ">=6.0",
+    "illuminatech/array-factory": ">=1.2.3"
+  },
+  "require-dev": {
+    "illuminate/auth": "*",
+    "illuminate/cache": "*",
+    "illuminate/config": "*",
+    "illuminate/database": "*",
+    "illuminate/events": "*",
+    "illuminate/hashing": "*",
+    "illuminate/log": "*",
+    "illuminate/translation": "*",
+    "phpunit/phpunit": "^7.5 || ^8.0 || ^9.3"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Yii2tech\\Illuminate\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Yii2tech\\Illuminate\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Yii2tech\\Illuminate\\YiiIlluminateServiceProvider"
+      ]
+    }
+  }
 }
